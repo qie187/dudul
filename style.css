@@ -1,0 +1,12 @@
+body {
+    margin:0;
+}
+
+canvas {
+    background-image: url(../lol/assets/test.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "lato", sans-serif;
+}
