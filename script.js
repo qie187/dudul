@@ -104,9 +104,9 @@ function onTouchMove(event) {
 function main() {
   resizeCanvas();
   render();
-  window.addEventListener('resize', onResize);
-  window.addEventListener('mousemove', onMouseMove);
-  window.addEventListener('touchmove', onTouchMove);
+  window.addEventListener("resize", onResize);
+  window.addEventListener("mousemove", onMouseMove);
+  window.addEventListener("touchmove", onTouchMove);
 }
 
-window.addEventListener('load', main);
+window.addEventListener("load", main);

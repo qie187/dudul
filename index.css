@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+h1{ font-size: 2.7em;}
+h2{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+header{
+    background-color: rgb(30,30,30); 
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+    font-size: 1.8em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: rgb(180, 0, 0);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("assets/testdudul.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(230, 230, 230);
+}
+
+#hero h2{
+    color: rgb(230, 230, 230);
+}
+
+#dudul-doubts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #212121;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#dudul-doubts h2{
+    color: rgb(230, 230, 230);
+}
+
+#dudul-doubts p{
+    color: rgb(230, 230, 230);
+}
+
+#container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#rooms{
+    background-color: rgb(30,30,30);
+    color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+#rooms{
+    padding: 150px 12px;
+}
+
+#rooms h2{
+    position: relative;
+    top: -60px;
+}
+
+#rooms img{
+    flex-direction: row;
+    width: 20vh;
+    height: 30vh;
+    padding: 0px 0px;
+    margin: 20px 50px;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 8px;
+    color: grey;
+}
+
+footer .container{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
