@@ -3,7 +3,7 @@ body {
 }
 
 canvas {
-    background-image: url(../lol/assets/test.jpg);
+    background-image: url(assets/test.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
